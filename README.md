@@ -33,5 +33,3 @@ func (d *debtResponse) creditPayments(pf int)
     }
 ```
 "Payments made on days outside the expected payment schedule [...] do not change/delay the payment schedule," only holds significance when granted **Assumption 3**.
-### Thank you
-For the opportunity and for your time and diligence in reading through. You can expect no less from me.
