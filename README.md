@@ -51,4 +51,4 @@ func (d *debtResponse) creditPayments(pf int)
         nextInstall = nextInstall.AddDate(0, 0, pf)
     }
 ```
-"Payments made on days outside the expected payment schedule [...] do not change/delay the payment schedule," only holds significance when granted [Assumption 4(https://github.com/ccheznoiu/golang_assessment_1/blob/main/README.md#assumption-4).
+"Payments made on days outside the expected payment schedule [...] do not change/delay the payment schedule," only holds significance when granted [Assumption 4](https://github.com/ccheznoiu/golang_assessment_1/blob/main/README.md#assumption-4).
