@@ -7,16 +7,6 @@ import (
 	"time"
 )
 
-/*
-A debt, which is money is owed to a collector.
-
-id (integer)
-amount (real) - amount owed in USD
-is_in_payment_plan (bool) - true when the debt is associated with an active payment plan; false when there is no payment plan, or the payment plan is completed.
-remaining_amount (number)- the calculated amount remaining to be paid on the debt. If the debt is associated with a payment plan, subtract from the payment plan's amount_to_pay instead.
-next_payment_due_date (string) - the ISO 8601 UTC date of when the next payment is due or null if there is no payment plan or if the debt has been paid off. Using the payment plan start_date and installment_frequency, it should be the next installment date after the latest payment, even if this date is in the past.
-*/
-
 type debtResponse struct {
 	ID           *int    `json:"id"`
 	Amount       USD     `json:"amount"`
