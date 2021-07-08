@@ -100,7 +100,7 @@ func (d *debtResponse) creditPayments(pf int) {
 	}
 }
 
-func (d *debtResponse) printOut() {
+func (d debtResponse) printOut() {
 	debtOut, err := json.MarshalIndent(d, "", "    ")
 	if err != nil {
 		log.Fatal(err)
