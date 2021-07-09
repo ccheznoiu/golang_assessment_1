@@ -24,7 +24,7 @@ A **Go** script to consume data from REST services serving the objects described
 * `date`
 ## Rationale
 ##### A Note on the USD Object
-A custom type was preferred for demonstration purposes. `math/big` or a third-party package devoted to currency would have been viable alternatives, except for the observation, discovered in the midst of unit testing, that [$1.xx5 is a special case](https://play.golang.org/p/Hr_WKI1eQLJ) (see [Assumption 1](https://github.com/ccheznoiu/golang_assessment_1/blob/main/README.md#assumption-1)). As such the herein provided `USD` type takes the approach of physically displacing the decimal two places to the right (like my 7th Grade teacher taught me). 
+A custom type was preferred for demonstration purposes. `math/big` or a third-party package devoted to currency would have been viable alternatives, save for the observation, discovered in the midst of unit testing, that [$1.xx5 is a special case](https://play.golang.org/p/Hr_WKI1eQLJ) (see [Assumption 1](https://github.com/ccheznoiu/golang_assessment_1/blob/main/README.md#assumption-1)). As such the herein provided `USD` type takes the approach of physically displacing the decimal two places to the right (like my 7th Grade teacher taught me). 
 ##### Assumption 1
 Round thousandth dollar values up (away from zero) to the next hundredth (cent).
 ##### Assumption 2
